@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <!-- Imporatação Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100&display=swap" rel="stylesheet">
+
+    <!-- Importação do Google Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Importação Estilo CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Importação Scrpits. Js -->
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="icon">
+            <img src="img/PokebolaIcon.png" alt="Pokebola" class="imageLogo">
+            <span class="logo">Pokedex</span>
+        </div>
+
+        <nav class="navBar">
+            <ul class="navBarList">
+                <li class="navBarItem">
+                    <a href="#" class="navBarItemLink">Home</a>
+                </li>
+                <li class="navBarItem">
+                    <a href="#" class="navBarItemLink">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="containerSearch">
+            <div class="search">
+                <span class="material-symbols-outlined searchIcon">
+                    search
+                </span>
+                <form class="form">
+                    <input type="search" class="inputSearch" id="search" name="search" placeholder="Procurar Pokemon">
+                </form>
+             </div>
+            <div class="navBarSearch">
+                <a href="#" class="IconLink">
+                    <span class="material-symbols-outlined filterIcon">
+                        filter_alt
+                    </span>
+                    <span class="filterPokemon">
+                        Filtrar
+                    </span>
+                </a>
+
+                <a href="#" class="IconLink">
+                    <span class="material-symbols-outlined favoriteIcon">
+                        favorite
+                    </span>
+                    <span class="favoritePokemon">
+                        Favoritos
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="containerPokemons" id="containerPokemons">
+            
+        </div>
+    </main>
+</body>
+</html>
